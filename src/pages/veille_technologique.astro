@@ -200,7 +200,7 @@ import Grid from '../components/Grid.astro';
             <div class="gallery">
                 <Grid variant="small">
                     {
-                        ['Radio', 'Wikipedia', 'ChatGPT', 'Youtube', 'RMC Sport', 'Foot Amateur Bretagne','Ligue 1', 'Diverses et variés sites sur le sujets'].map((brand) => (
+                        ['Radio', <a target="_blank" href="https://fr.wikipedia.org/wiki/Data">Wikipedia (la Data)</a>, 'ChatGPT', 'Youtube', 'RMC Sport', <a target="_blank" href="https://www.morganphilips.com/fr-fra/conseils-et-actus/le-role-predominant-de-la-data-dans-le-sport">Morgan Philips</a>,'Ligue 1', 'Diverses et variés sites sur le sujets'].map((brand) => (
                             <li class="mention-card">
                                 <p>{brand}</p>
                             </li>

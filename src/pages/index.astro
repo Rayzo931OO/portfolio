@@ -34,7 +34,7 @@ const projects = (await getCollection('work'))
 		max-width: 1000px; /* Pour limiter la largeur du texte au milieu de la page */
 	}
 </style>	
-	<div class="stack gap-20 lg:gap-48">
+	<div class="stack gap-20 lg:gap-20">
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
@@ -56,9 +56,8 @@ const projects = (await getCollection('work'))
 					src="/assets/portrait.jpg"
 				/>
 			</header>
-
-			
 		</div>
+		
 		<section class="center-text">
 			<h2 class="section-title">Mon parcours ?</h2></br></br>
 			<div class="content">
@@ -70,13 +69,14 @@ const projects = (await getCollection('work'))
 				
 					Cependant, ma passion pour l'informatique m'a 
 					guidé vers une toute nouvelle voie. J'ai saisi l'opportunité de me former au CFA INSTA,
-					où j'ai entrepris une formation approfondie en informatique.</p>
+					où j'ai entrepris une formation approfondie en informatique.
+				</p>
 			</div>
 		</section>
 		
 		<Skills />
-		<div style="width:70%; margin: 0 auto;">
-			<iframe src="/pdf/cv.pdf" width="100%" height="1000px"></iframe>
+		<div style="display: flex; flex-wrap: wrap; justify-content: center";>
+			<iframe src="/pdf/cv.pdf" width="820px" height="1188px"></iframe>
 		</div>
 
 		<!-- <main class="wrapper stack gap-20 lg:gap-48">
