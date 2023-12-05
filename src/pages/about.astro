@@ -1,63 +1,80 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Skills from '../components/Skills.astro';
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+<BaseLayout
+	title="BTS | Rayan MISSOUM"
+	description="BTS !"
+>
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+				title="BTS SIO !"
+				tagline="C'est quoi le BTS SIO ?"
 			>
 				<img
 					width="1553"
 					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
+					src="/assets/dev.jpg"
+					alt="TFC"
 				/>
 			</Hero>
 
 			<section>
-				<h2 class="section-title">Background</h2>
+				<h2 class="section-title">BTS SIO c'est quoi ?</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl
-						condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu
-						odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum
-						dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
+						Le BTS SIO (Services Informatiques aux Organisations) est un diplôme 
+						de l'enseignement supérieur français de niveau bac+2 
+						(Brevet de Technicien Supérieur). Il vise à former des professionnels 
+						capables de répondre aux besoins informatiques des organisations.
+					</p></br>
+					<p>Les étudiants suivant ce BTS acquièrent des compétences 
+						techniques solides en informatique, en réseaux, en développement logiciel, 
+						en gestion de projets, et en maintenance des systèmes. 
+						Ils apprennent également à comprendre les besoins des organisations 
+						afin de proposer des solutions informatiques adaptées.</p></br>
+						<p>Le BTS SIO prépare les étudiants à entrer dans le monde professionnel 
+							directement après l'obtention du diplôme ou à poursuivre 
+							leurs études en licence professionnelle ou en école d'ingénieurs 
+							en informatique.</p>
 				</div>
 			</section>
 			<section>
-				<h2 class="section-title">Education</h2>
+				<h2 class="section-title">Option</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<p>1. Option SLAM (Solutions Logicielles et Applications Métiers) : 
+						Cette option forme des professionnels capables de concevoir, développer, 
+						et maintenir des applications informatiques répondant aux besoins spécifiques 
+						des entreprises. Ces applications peuvent être des logiciels métiers, 
+						des applications web, des bases de données, etc</p></br>
+					<p>2. Option SISR (Solutions d'Infrastructure, Systèmes et Réseaux) : 
+						Cette option forme des techniciens spécialisés dans la conception, l'installation, 
+						la configuration et la maintenance des infrastructures informatiques 
+						(matériels, réseaux, systèmes, etc.). Ils sont chargés de veiller au bon fonctionnement 
+						et à la sécurité des systèmes informatiques au sein des entreprises</p>
 				</div>
 			</section>
 			<section>
-				<h2 class="section-title">Skills</h2>
+				<h2 class="section-title"> Mes Objectifs !</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<p>Actuellement en BTS SIO, je me prépare activement pour
+						réussir mon examen, aspirant à l'obtenir avec succès.
+						Mon objectif à long terme est de devenir développeur web
+						full stack. Passionné par la création digitale,
+						j'ambitionne de maîtriser tous les aspects du
+						développement pour concevoir des expériences en ligne
+						captivantes et fonctionnelles, combinant ainsi ma
+						formation actuelle avec mes aspirations
+						professionnelles.</p>
 				</div>
+				<!-- <div><a href="https://drive.google.com/file/d/1dS-ntTPSKuW0KcNOPKwd0hCFETPzKrFS/view?usp=drive_link">Télécharger mon CV</a></div> -->
 			</section>
 		</main>
-
+		<!-- <Skills /> -->
 		<ContactCTA />
 	</div>
 </BaseLayout>

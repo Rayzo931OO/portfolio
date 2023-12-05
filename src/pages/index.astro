@@ -26,37 +26,61 @@ const projects = (await getCollection('work'))
 ---
 
 <BaseLayout>
+	<style>
+	.center-text {
+		text-align: center;
+		margin: 0 auto;
+		width: auto;
+		max-width: 1000px; /* Pour limiter la largeur du texte au milieu de la page */
+	}
+</style>	
 	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
-					align="start"
+					title="Bonjour, je suis Rayan"
+					tagline="Je suis un étudiant en BTS SIO (SLAM) et apprentit dans le domaine de l'informatique chez la DRSM ! Et voici mon portfolio."
 				>
+
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Developpeur</Pill>
+						<Pill><Icon icon="terminal-window" size="1.33em" /> Réseaux</Pill>
+						<Pill><Icon icon="strategy" size="1.33em" /> Chef de projet</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Missoum Rayan"
 					width="480"
 					height="620"
 					src="/assets/portrait.jpg"
 				/>
 			</header>
 
-			<Skills />
+			
 		</div>
+		<section class="center-text">
+			<h2 class="section-title">Mon parcours ?</h2></br></br>
+			<div class="content">
+				<p>Après avoir obtenu mon baccalauréat ES, 
+					j'ai entamé des études universitaires pendant deux ans, 
+					mais j'ai rapidement ressenti le besoin de découvrir d'autres horizons. 
+					J'ai alors travaillé en tant qu'animateur, une expérience enrichissante 
+					qui m'a permis de développer mes compétences relationnelles et mon sens de l'organisation.
+				
+					Cependant, ma passion pour l'informatique m'a 
+					guidé vers une toute nouvelle voie. J'ai saisi l'opportunité de me former au CFA INSTA,
+					où j'ai entrepris une formation approfondie en informatique.</p>
+			</div>
+		</section>
+		
+		<Skills />
 
-		<main class="wrapper stack gap-20 lg:gap-48">
+		<!-- <main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Mes Projets</h3>
+					<p>Vous pourrez y voir mes différent projet.</p>
 				</header>
 
 				<div class="gallery">
@@ -73,25 +97,24 @@ const projects = (await getCollection('work'))
 
 				<div class="cta">
 					<CallToAction href="/work/">
-						View All
+						Tout Voir
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
-			</section>
+			</section> -->
 
-			<section class="section with-background bg-variant">
+			<!-- <section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Sources/Outils</h3>
 					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
+						J'ai pue réaliser mon travail grâce à ces différents outils/sources.
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							['Astro', 'Wikipedia', 'ChatGPT', 'Google Drive', 'RMC Sport', 'Foot Amateur Bretagne','Ligue 1', 'Diverses et variés site de portfolio'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
@@ -100,7 +123,7 @@ const projects = (await getCollection('work'))
 					</Grid>
 				</div>
 			</section>
-		</main>
+		</main> -->
 
 		<ContactCTA />
 	</div>

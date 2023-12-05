@@ -1,35 +1,37 @@
 ---
-title: Markdown Mystery Tour
-publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+title: Orange
+publishDate: 2023-29-11 12:23:17
+
+img: /assets/orange_logo.jpg 
+img_alt: Logo de Orange
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  Projet 1.
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - Projet de groupe
+  - Développement web
+  - Base de donnée
 ---
 
-## Level-two heading
+## Création du site Orange.
 
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
+> Projet Orange pour l'examen.
 
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+### Quel en était le but ?
 
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
+Création d'un client léger à l'aide de camarade, nous devions nous organiser et répartir nos tâches. Il y avait de la gestion de projet, de la base de donnée, de la programmation (MVC)...
 
-### Level-three heading
+<!-- <div><a href="https://docs.google.com/presentation/d/1GXMyouYu4_GIz-37z9w-hgRmE-MxHcE-VB_3WPqX6KQ/edit#slide=id.g21672eac0ab_0_2">Lien vers un PowerPoint plus explicatif !</a></div> -->
 
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
 
-### Level-three heading
+<div>
+    <iframe src="\pdf\projet.pdf" width="100%" height="500px"></iframe>
+</div>
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+### Ressentit/Bilan du projet
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+J'ai récemment mené un projet qui a été une expérience extrêmement enrichissante pour moi. Ce projet m'a plongé dans l'univers de l'entreprise, me permettant ainsi de mieux appréhender les réalités du monde professionnel. Ce qui m'a particulièrement marqué, c'est l'esprit d'entraide et le partage des connaissances au sein de l'équipe. Cette dynamique collaborative a été incroyablement bénéfique, car elle m'a permis d'apprendre énormément, d'acquérir de nouvelles compétences et d'évoluer dans un environnement où chacun contribuait au succès du projet.
 
-#### Level-four heading
+Sur le plan personnel, cette expérience m'a offert une formidable opportunité de développement, notamment en matière de programmation de bases de données et dans la maîtrise de divers logiciels. J'ai pu consacrer du temps à approfondir mes connaissances en programmation, ce qui m'a permis de faire des avancées significatives dans la manipulation et la gestion de bases de données. De même, j'ai exploré et amélioré mes compétences sur différents logiciels, élargissant ainsi mes compétences techniques et renforçant ma polyvalence dans ce domaine.
 
-- We noted this
-- And also this other point
+
+

@@ -1,0 +1,112 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Skills from '../components/Skills.astro';
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout
+	title="Entreprise | Rayan MISSOUM"
+	description="BTS !"
+>
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="Mon Entreprise !"
+				tagline="J'ai été pour mes deux années de BTS au sein de la DRSM !"
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/drsm.jpg"
+					alt="TFC"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Qui somme-nous ?</h2>
+				<div class="content">
+					<p>
+						La direction régionale du service médical (DRSM) de l'Assurance Maladie 
+						mène des actions dans l'objectif de garantir la juste utilisation des ressources et 
+						de renforcer la pertinence des soins.
+					</p></br>
+					<p> Il s’agit d’un service national unique, indépendant du réseau des Caisses primaires, 
+						ce qui permet de garantir l’impartialité et l’équité des avis rendus.</p></br>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Ce que je fais ?</h2>
+				<div class="content">
+					<p>Dans le cadre de mon rôle au sein du service informatique de la DRSM, 
+						j'assume un rôle d'assistance auprès des utilisateurs. 
+						Mon travail consiste à accompagner les différents supports en leur offrant un 
+						soutien technique adapté à leurs besoins. En parallèle, 
+						je contribue activement à diverses tâches inhérentes au fonctionnement 
+						quotidien de l'entreprise. Mon implication dans ces missions variées 
+						témoigne de ma polyvalence et de mon engagement à garantir le bon 
+						déroulement des activités informatiques au sein de la DRSM.</p></br>
+				</div>
+			</section>
+		</main>
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
