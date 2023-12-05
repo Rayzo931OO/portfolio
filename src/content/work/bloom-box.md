@@ -21,7 +21,7 @@ Création d'un client léger sur WordPress en groupe.Nous devions réaliser la f
 
 
 <div>
-    <iframe src="\pdf\wp_projet.pdf" width="100%" height="500px"></iframe>
+    <iframe src="/pdf/wp_projet.pdf" width="100%" height="800px"></iframe>
 </div>
 
 ### Ressentit/Bilan du projet

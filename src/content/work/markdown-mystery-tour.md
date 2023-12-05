@@ -24,7 +24,7 @@ Création d'un client léger à l'aide de camarade, nous devions nous organiser 
 
 
 <div>
-    <iframe src="\pdf\projet.pdf" width="100%" height="500px"></iframe>
+    <iframe src="/pdf/projet.pdf" width="100%" height="500px"></iframe>
 </div>
 
 ### Ressentit/Bilan du projet
