@@ -11,7 +11,13 @@ tags:
   - Ligne de commande
 ---
 
-## Principe de fonctionnement :
+## But du projet :
+
+Dans le cadre de ce projet d'entreprise, nous étions confrontés à des utilisateurs qui perdaient ou oubliaient leurs cartes à puce nécessaires pour se connecter. Cette situation devenait embarrassante, notamment lorsque les employés travaillaient à distance ou loin du site de Flandre. Cependant, grâce à l'implémentation du logiciel, nous avons désormais la possibilité d'utiliser, à partir des différentes machines situées sur les sites les plus proches des utilisateurs, un logiciel permettant l'octroi à distance de droits sur des cartes de prêt.
+
+## Ma participation au projet :
+
+## Principe de fonctionnement du logiciel :
 
 Un poste fixe muni d’un lecteur de carte à puce, alimenté et mis sur le réseau (pas d’autre
 périphérique) est placé sur chaque site où l’on aura à prêter des cartes.
