@@ -6,9 +6,10 @@ img_alt: Cartes à puces
 description: |
   Projet carte à puce à distance.
 tags:
-  - Réseaux
+  - BIOS
   - Installations/Documentations
   - Ligne de commande
+  - Setup
 ---
 
 ## But du projet :
@@ -16,6 +17,111 @@ tags:
 Dans le cadre de ce projet d'entreprise, nous étions confrontés à des utilisateurs qui perdaient ou oubliaient leurs cartes à puce nécessaires pour se connecter. Cette situation devenait embarrassante, notamment lorsque les employés travaillaient à distance ou loin du site de Flandre. Cependant, grâce à l'implémentation du logiciel, nous avons désormais la possibilité d'utiliser, à partir des différentes machines situées sur les sites les plus proches des utilisateurs, un logiciel permettant l'octroi à distance de droits sur des cartes de prêt.
 
 ## Ma participation au projet :
+
+<!-- > Désinstallations :
+
+-désinstallation du driver:
+
+-C:\ Program Files\cap_usbip\bin : usbip.exe uninstall
+
+-désinstallation du service :
+
+-« C:\Program Files\cap_usbip\nssm-2.24\win64 » :  deinstall_cap_service.bat
+
+-Suppression du certificat « USBIP Test » dans :
+
+-ordinateur local/Autorités de certification racines de confiance et ordinateur local/Editeurs approuvés
+
+> Installation du poste debian serveur de lecteur de carte à puce :
+
+L’installation à la DRSM IdF se pratique sur des PC HP Prodesk 400 G4 SFF du PEI 2018 munis de
+lecteur de carte à puce gemplus CT30, l’installation se fait par clonage depuis un partage NFS pour
+des raisons de rapidité, mais peut être fait depuis tout média. 
+
+Les premiers essais ont eu lieu sur des Acer Veriton du PEI 2019 et le passage aux HP (moins encombrants et dont le nombre était suffisant) n’a pas présenté de difficulté majeure. -->
+
+> Les instructions à suivre étaient les suivantes :
+
+- Brancher le PC :
+
+écran, clavier, souris, réseau, alim.
+
+- Configuration du Bios :
+
+- Allumer le PC et faire « Esc » puis « F10 » pour entrer dans le bios.
+
+- Aller dans « Advanced » (avec les flèches gauche/droite)
+
+- Choisir « Boot Options » (avec les flèches haut/bas)
+
+- Dans l’option « After Power Loss » sélectionner « Power On »
+
+"After Power Loss" ou "After Power On" dans le BIOS fait référence à une option permettant de définir le comportement de l'ordinateur après une perte de courant et son redémarrage
+
+- Sortir de Boot Options (Esc)
+
+- Choisir « Secure Boot Configuration »
+
+- Dans l’option « Configure Legacy Support and Secure Boot » sélectionner « Legacy Support Enable and Secure Boot Disable » :
+
+
+- Legacy Support Enable (Activation du support hérité) :
+
+Cette option permet à votre ordinateur de démarrer en utilisant des méthodes plus anciennes ou héritées pour interagir avec le matériel et les logiciels. Cela signifie que votre ordinateur peut prendre en charge des systèmes d'exploitation et des périphériques plus anciens qui ne prennent pas en charge les dernières normes de démarrage et de fonctionnement.
+
+- Secure Boot Disable (Désactivation du démarrage sécurisé) : 
+
+Secure Boot est une fonctionnalité conçue pour sécuriser le processus de démarrage de l'ordinateur en n'autorisant que l'exécution de logiciels signés et approuvés. Lorsque vous désactivez Secure Boot, vous autorisez le démarrage de systèmes d'exploitation ou de logiciels non signés ou non approuvés par le fabricant.
+
+
+
+-Sortir (Esc puis Esc et Répondre « Yes » à la question « Save Changes ? »)
+
+> Installation du poste :
+
+- Mettre la cle « Ventoy » dans un port usb et redémarrer le poste en tapant immédiatement et de
+façon répétitive sur « F9 »
+
+- Choisir le démarrage Legacy sur la clé (Kingston ?)
+
+- Dans le menu Ventoy, choisir « rescuezilla-2.3.1-64bit.impish.iso »
+
+- Choisir « Français »
+
+- Choisir « Démarrer Redo Backup »
+
+- Choisir « Restaurer »
+
+Etape 1 :
+
+- Choisir « Partagé sur un réseau »
+- Cliquer sur « Dossier partagé indiqué ci-dessous » et choisir « NFS »
+- Dans « Emplacement du serveur ou du partage » renseigner l’adresse IP
+- Dans « Exported path » renseigner « /partage/NFS »
+
+Etape 2 :
+
+- Cliquer sur « Parcourir … »
+
+- Choisir le dossier « usbip »
+
+- Sélectionner l’image à restaurer « 2022-11-23-0806-img-rescuezilla » avec un « simple clic »
+puis « Valider »
+
+- Faire « Suivant »
+
+Etape 3 :
+
+- Sélectionner le disque cible (capacité 931,5GB en général)
+
+Etape 4 :
+
+- Laisser les choix (restaurer les 2 partions et écraser la table de partition)
+
+Etape 5 :
+
+- « Suivant »
+Fin de l’installation (temps passé de l’ordre de 10 minutes par poste).
 
 ## Principe de fonctionnement du logiciel :
 
@@ -184,79 +290,6 @@ sur un seul PC à la fois.
 
 =================
 
-> Désinstallations :
-
--désinstallation du driver:
--C:\ Program Files\cap_usbip\bin : usbip.exe uninstall
--désinstallation du service :
--« C:\Program Files\cap_usbip\nssm-2.24\win64 » :  deinstall_cap_service.bat
--Suppression du certificat « USBIP Test » dans :
--ordinateur local / Autorités de certification racines de confiance et
--ordinateur local / Editeurs approuvés
-
-Installation du poste debian serveur de lecteur de carte à puce :
-
-L’installation à la DRSM IdF se pratique sur des PC HP Prodesk 400 G4 SFF du PEI 2018 munis de
-lecteur de carte à puce gemplus CT30, l’installation se fait par clonage depuis un partage NFS pour
-des raisons de rapidité, mais peut être fait depuis tout média. Les premiers essais ont eu lieu sur des
-Acer Veriton du PEI 2019 et le passage aux HP (moins encombrants et dont le nombre était suffisant)
-n’a pas présenté de difficulté majeure.
-
-Les instructions données à l’alternant débutant en charge de l’installation des postes ètaient les
-suivantes :
-
-Brancher le PC (écran, clavier, souris, réseau, alim)
-
-1°) Configuration du Bios :
-
--Allumer le PC et faire « Esc » puis « F10 » pour entrer dans le bios.
--Aller dans « Advanced » (avec les flèches gauche/droite)
--Choisir « Boot Options » (avec les flèches haut/bas)
--Dans l’option « After Power Loss » sélectionner « Power On »
--Sortir de Boot Options (Esc)
--Choisir « Secure Boot Configuration »
--Dans l’option « Configure Legacy Support and Secure Boot » sélectionner « Legacy Support
--Enable and Secure Boot Disable »
--Sortir (Esc puis Esc et Répondre « Yes » à la question « Save Changes ? »)
-
-2° Installation du poste :
-
-Mettre la cle « Ventoy » dans un port usb et redémarrer la poste en tapant immédiatement et de
-façon répétitive sur « F9 »
-Choisir le démarrage Legacy sur la clé (Kingston ?)
-Dans le menu Ventoy, choisir « rescuezilla-2.3.1-64bit.impish.iso »
-Choisir « Français »
-Choisir « Démarrer Redo Backup »
-Choisir « Restaurer »
-
-Etape 1 :
-
-- Choisir « Partagé sur un réseau »
-- Cliquer sur « Dossier partagé indiqué ci-dessous » et choisir « NFS »
-- Dans « Emplacement du serveur ou du partage » renseigner l’adresse IP
-- Dans « Exported path » renseigner « /partage/NFS »
-
-Etape 2 :
-
-- Cliquer sur « Parcourir … »
-- Choisir le dossier « usbip »
-- Sélectionner l’image à restaurer « 2022-11-23-0806-img-rescuezilla » avec un « simple clic »
-puis « Valider »
-- Faire « Suivant »
-
-Etape 3 :
-
-- Sélectionner le disque cible (capacité 931,5GB en général)
-
-Etape 4 :
-
-- Laisser les choix (restaurer les 2 partions et écraser la table de partition)
-
-Etape 5 :
-
-- « Suivant »
-Fin de l’installation (temps passé de l’ordre de 10 minutes par poste).
-
 Adaptations nécessaires : suivant le nombre de déploiement envisagés, refaire les
 livrables
 Côté serveur/Lecteur :
@@ -270,7 +303,7 @@ o « C:\Program Files\cap_usbip\bin\gestion_cap.bat » et gestion_user_cap.bat
 o /root/cap_register.sh (sur les serveurs/lecteurs)
 o Adapter le fichier /etc/apache2/sites-available/040-cap.conf (sur le serveur web)
 
-> ANNEXE:
+<!-- > ANNEXE:
 
 Notes sur l’installation serveur linux debian :
 
@@ -452,4 +485,4 @@ usbip(8)
 
 usbipd(8)
 
-Category: Storage
+Category: Storage -->

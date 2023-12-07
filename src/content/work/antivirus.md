@@ -18,7 +18,7 @@ J'avais pour mission de remplacer l'antivirus russe Kaspersky par l'antivirus fr
 ### Procédure de désinstallation et d'installation ! </br>
 
 <div>
-    <iframe src="/pdf/glpi.pdf" width="100%" height="800px"></iframe>
+    <iframe src="/pdf/préparation_postes_relais.docx.pdf" width="100%" height="800px"></iframe>
 </div>
 </br>
 
