@@ -2,7 +2,7 @@
 title: OrangeJava
 publishDate: 2024-21-05 12:23:17
 
-img: /assets/orange_logo.jpg 
+img: /assets/OrangeJava.jpg 
 img_alt: Logo de Orange
 description: |
   Projet 2.
