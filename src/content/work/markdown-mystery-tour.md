@@ -20,12 +20,10 @@ tags:
 
 Création d'un client léger à l'aide de camarade, nous devions nous organiser et répartir nos tâches. Il y avait de la gestion de projet, de la base de donnée, de la programmation (MVC)...
 
-<!-- <div><a href="https://docs.google.com/presentation/d/1GXMyouYu4_GIz-37z9w-hgRmE-MxHcE-VB_3WPqX6KQ/edit#slide=id.g21672eac0ab_0_2">Lien vers un PowerPoint plus explicatif !</a></div> -->
 
-
-<div>
+<!-- <div>
     <iframe src="/pdf/projet.pdf" width="100%" height="500px"></iframe>
-</div>
+</div> -->
 
 ### Ressentit/Bilan du projet
 
