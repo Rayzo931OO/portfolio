@@ -12,7 +12,7 @@ tags:
   - Base de donnée
 ---
 
-## Création du site Orange.
+## Création de l'application Orange.
 
 > Projet Orange en Java pour l'examen.
 
