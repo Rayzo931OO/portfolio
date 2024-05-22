@@ -25,6 +25,8 @@ Création d'un client léger à l'aide de camarade, nous devions nous organiser 
     <iframe src="/pdf/projet.pdf" width="100%" height="500px"></iframe>
 </div> -->
 
+<div><a href="http://localhost/MVC_Orange/vue/accueil/">Lien vers le site web</a></div>
+
 ### Ressentit/Bilan du projet
 
 J'ai récemment mené un projet qui a été une expérience extrêmement enrichissante pour moi. Ce projet m'a plongé dans l'univers de l'entreprise, me permettant ainsi de mieux appréhender les réalités du monde professionnel. Ce qui m'a particulièrement marqué, c'est l'esprit d'entraide et le partage des connaissances au sein de l'équipe. Cette dynamique collaborative a été incroyablement bénéfique, car elle m'a permis d'apprendre énormément, d'acquérir de nouvelles compétences et d'évoluer dans un environnement où chacun contribuait au succès du projet.

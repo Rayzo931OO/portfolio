@@ -28,9 +28,7 @@ Création d'un client lourd à l'aide de camarade, nous devions nous organiser e
 -md5...
 
 
-<!-- <div>
-    <iframe src="/pdf/projet.pdf" width="100%" height="500px"></iframe>
-</div> -->
+> Lancer Eclipse pour voir l'application Java.
 
 ### Ressentit/Bilan du projet
 
