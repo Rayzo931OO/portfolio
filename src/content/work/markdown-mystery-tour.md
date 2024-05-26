@@ -21,11 +21,11 @@ tags:
 Création d'un client léger à l'aide de camarade, nous devions nous organiser et répartir nos tâches. Il y avait de la gestion de projet, de la base de donnée, de la programmation (MVC)...
 
 
-<!-- <div>
-    <iframe src="/pdf/projet.pdf" width="100%" height="500px"></iframe>
-</div> -->
+<div>
+    <iframe src="/pdf/Orange.pdf" width="100%" height="500px"></iframe>
+</div>
 
-<div><a href="http://localhost/MVC_Orange/vue/accueil/">Lien vers le site web</a></div>
+<!-- <div><a href="http://localhost/MVC_Orange/vue/accueil/">Lien vers le site web</a></div> -->
 
 ### Ressentit/Bilan du projet
 

@@ -28,6 +28,11 @@ Dès le début, j'ai défini les objectifs du projet et planifié les différent
 
 J'ai attribué les tâches en fonction des compétences de chaque membre de l'équipe, maximisant ainsi l'efficacité. Cela a permis à chacun de travailler sur des aspects où il pourrait apporter le plus de valeur.
 
+-Trello
+-Gantt
+-Discord
+-GitHub
+
 > Suivi et Ajustements :
 
 J'ai organisé des réunions hebdomadaires pour faire le point sur l'avancement et résoudre les problèmes éventuels. Cela nous a permis d'ajuster notre planning et de redistribuer les tâches si nécessaire, tout en discutant des solutions techniques et partageant les meilleures pratiques.
